@@ -1,7 +1,8 @@
-import {hello} from "../src/main";
+import { describe, test, expect } from "vitest";
+import { hello } from "../src/main";
 
-describe('sample', () => {
-    test('hello', () => {
-        expect(hello()).toMatch('hello!')
-    })
-})
+describe("sample", () => {
+  test("hello", () => {
+    expect(hello()).toMatch("hello!");
+  });
+});
