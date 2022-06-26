@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "lint": "eslint --fix && prettier --write '**/*.ts'",
+    "compile": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint --fix && prettier --write '**/*.{ts,js}'",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "test": "vitest",
